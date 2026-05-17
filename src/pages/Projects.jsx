@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, MapPin, Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // Images
 import proj1 from '../assets/images/hero.jpg';
@@ -88,7 +89,7 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex justify-center items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand mb-6"
           >
-            <span>Home</span>
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span className="text-white/30">/</span>
             <span className="text-white/60">Our Projects</span>
           </motion.div>
@@ -98,7 +99,7 @@ const Projects = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-8xl font-black mb-8"
           >
-            Get In <span className="text-brand">Touch</span>
+            Our <span className="text-brand">Projects</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -106,7 +107,7 @@ const Projects = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed font-medium"
           >
-            Discover our exceptional range of residential and commercial developments across Nashik's most prime locations.
+            Discover our exceptional range of residential and commercial developments across Nashik's most prime locations — built with quality, trust, and lasting value.
           </motion.p>
         </div>
       </section>

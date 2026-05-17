@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Building2, Store, Paintbrush, Landmark, Gavel, Settings, Search, Layout, HardHat } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import servicesHero from '../assets/images/services_hero.jpg';
 
 const Services = () => {
@@ -60,7 +61,7 @@ const Services = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex justify-center items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand mb-6"
           >
-            <span>Home</span>
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span className="text-white/30">/</span>
             <span className="text-white/60">Services</span>
           </motion.div>
@@ -78,7 +79,7 @@ const Services = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed font-medium"
           >
-            Comprehensive real estate solutions designed to turn your property dreams into reality with quality and precision.
+            Comprehensive real estate solutions from Sanjivani Builders &amp; Developers — turning your property dreams into reality with quality, precision, and 25+ years of expertise.
           </motion.p>
         </div>
       </section>

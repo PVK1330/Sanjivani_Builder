@@ -15,9 +15,10 @@ const Footer = () => {
             <Link to="/" className="inline-block bg-white p-2 md:p-2.5 rounded-xl md:rounded-2xl mb-8 shadow-xl shadow-black/20">
               <img src={logo} alt="Sanjivani Logo" className="h-10 md:h-12 w-auto object-contain" />
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-xs">
+            <p className="text-gray-400 text-sm leading-relaxed mb-4 max-w-xs">
               Delivering premium residential and commercial spaces in Nashik since 1999 with trust, quality, and commitment.
             </p>
+            <p className="text-brand text-xs font-black uppercase tracking-widest mb-8">Where Quality Meets Commitment</p>
             <div className="flex gap-4">
               {[
                 { icon: <Globe size={18} />, href: 'https://instagram.com/sanjivani_builders_developers' },
@@ -96,7 +97,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-500">
-          <p>© {currentYear} Sanjivani Builders & Developers. All rights reserved.</p>
+          <p>© {currentYear} Sanjivani Builders &amp; Developers. All rights reserved. | Founded by Shivaji Laxman Bhandure</p>
           <div className="flex gap-8 font-bold uppercase tracking-widest">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Use</Link>

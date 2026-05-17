@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Clock, CheckCircle2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import contactHero from '../assets/images/contact_hero.png';
 
 const Contact = () => {
@@ -57,7 +58,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex justify-center items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand mb-6"
           >
-            <span>Home</span>
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span className="text-white/30">/</span>
             <span className="text-white/60">Contact Us</span>
           </motion.div>
@@ -75,7 +76,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed font-medium"
           >
-            Have questions about our projects or want to schedule a site visit? We're here to help you find your perfect home.
+            Have questions about our projects in Nashik or want to schedule a site visit? Our team at Sanjivani Builders &amp; Developers is here to help you find your perfect home.
           </motion.p>
         </div>
       </section>

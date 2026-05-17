@@ -34,8 +34,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl md:text-8xl font-black text-white leading-[1.1] mb-6 md:mb-8"
           >
-            Building <span className="gradient-text">Dreams</span><br />
-            in Nashik
+            Where <span className="gradient-text">Quality</span><br />
+            Meets Commitment
           </motion.h1>
 
           <motion.p 
@@ -44,7 +44,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-base md:text-xl text-white/70 leading-relaxed mb-8 md:mb-12 max-w-xl font-medium"
           >
-            Crafting premium residential and commercial spaces across Nashik for over 25 years with quality, trust, and on-time delivery.
+            Since 1999, Sanjivani Builders &amp; Developers has been shaping landmarks with trust, quality, and innovation — delivering premium residential and commercial spaces built for generations.
           </motion.p>
 
           <motion.div 

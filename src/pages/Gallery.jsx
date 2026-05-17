@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Maximize2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // Images
 import img1 from '../assets/images/hero.jpg';
@@ -38,7 +39,7 @@ const Gallery = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex justify-center items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand mb-6"
           >
-            <span>Home</span>
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span className="text-white/30">/</span>
             <span className="text-white/60">Gallery</span>
           </motion.div>
@@ -56,7 +57,7 @@ const Gallery = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed font-medium"
           >
-            A visual journey through our finest architectural achievements and premium developments in Nashik.
+            A visual journey through our finest architectural achievements and premium residential &amp; commercial developments in Nashik.
           </motion.p>
         </div>
       </section>
